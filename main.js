@@ -1,13 +1,13 @@
-function dis(val) {
-  document.getElementById("result").value += val
+function dig(val) {
+  document.getElementById("resultado").value += val
 }
 
-function solve() {
-  let x = document.getElementById("result").value
+function calcular() {
+  let x = document.getElementById("resultado").value
   let y = eval(x)
-  document.getElementById("result").value = y
+  document.getElementById("resultado").value = y
 }
 
-function clr() {
-  document.getElementById("result").value = ""
+function limpar() {
+  document.getElementById("resultado").value = ""
 } 

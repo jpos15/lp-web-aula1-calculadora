@@ -16,32 +16,35 @@
         <h6>Calculadora</h6>
         <table>
             <tr>
-                <td colspan="3"><input type="text" id="result" class="form-control" readonly/></td>
-                <td><button type="button" value="c" onclick="clr()" class="btn btn-info btn-block">C</td>
+                <td colspan="3"><input type="text" id="resultado" class="form-control" readonly/></td>
+                <td><button type="button" value="c" onclick="limpar()" class="btn btn-info btn-block">C</td>
             </tr>
             <tr>
-                <td><button type="button" onclick="dis('1')" class="btn btn-info btn-block">1</td>
-                <td><button type="button" onclick="dis('2')" class="btn btn-info btn-block">2</td>
-                <td><button type="button" onclick="dis('3')" class="btn btn-info btn-block">3</td>
-                <td><button type="button" onclick="dis('/')" class="btn btn-info btn-block">/</td>
+                <td><button type="button" onclick="dig('1')" class="btn btn-info btn-block">1</td>
+                <td><button type="button" onclick="dig('2')" class="btn btn-info btn-block">2</td>
+                <td><button type="button" onclick="dig('3')" class="btn btn-info btn-block">3</td>
+                <td><button type="button" onclick="dig('/')" class="btn btn-info btn-block">/</td>
             </tr>
             <tr>
-                <td><button type="button" onclick="dis('4')" class="btn btn-info btn-block">4</td>
-                <td><button type="button" onclick="dis('5')" class="btn btn-info btn-block">5</td>
-                <td><button type="button" onclick="dis('6')" class="btn btn-info btn-block">6</td>
-                <td><button type="button" onclick="dis('-')" class="btn btn-info btn-block">-</td>
+                <td><button type="button" onclick="dig('4')" class="btn btn-info btn-block">4</td>
+                <td><button type="button" onclick="dig('5')" class="btn btn-info btn-block">5</td>
+                <td><button type="button" onclick="dig('6')" class="btn btn-info btn-block">6</td>
+                <td><button type="button" onclick="dig('-')" class="btn btn-info btn-block">-</td>
             </tr>
             <tr>
-                <td><button type="button" onclick="dis('7')" class="btn btn-info btn-block">7</td>
-                <td><button type="button" onclick="dis('8')" class="btn btn-info btn-block">8</td>
-                <td><button type="button" onclick="dis('9')" class="btn btn-info btn-block">9</td>
-                <td><button type="button" onclick="dis('+')" class="btn btn-info btn-block">+</td>
+                <td><button type="button" onclick="dig('7')" class="btn btn-info btn-block">7</td>
+                <td><button type="button" onclick="dig('8')" class="btn btn-info btn-block">8</td>
+                <td><button type="button" onclick="dig('9')" class="btn btn-info btn-block">9</td>
+                <td><button type="button" onclick="dig('+')" class="btn btn-info btn-block">+</td>
             </tr>
             <tr>
-                <td><button type="button" onclick="dis('.')" class="btn btn-info btn-block">.</td>
-                <td><button type="button" onclick="dis('0')" class="btn btn-info btn-block">0</td>
-                <td><button type="button" onclick="solve()" class="btn btn-info btn-block">=</td>
-                <td><button type="button" onclick="dis('*')" class="btn btn-info btn-block">*</td>
+                <td><button type="button" onclick="dig('.')" class="btn btn-info btn-block">.</td>
+                <td><button type="button" onclick="dig('0')" class="btn btn-info btn-block">0</td>
+                <td><button type="button" onclick="calcular()" class="btn btn-info btn-block">=</td>
+                <td><button type="button" onclick="dig('*')" class="btn btn-info btn-block">*</td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="text" id="hitorico" class="form-control" readonly/></td>
             </tr>
         </table>
     </div>
