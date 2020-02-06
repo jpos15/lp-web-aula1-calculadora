@@ -1,2 +1,7 @@
 1 - Criando projeto base
 2 - Criando repositório no GitHub
+3 - Criando o html base
+4 - Criando o JS base
+5 - criacao de funcoes e demais codigo necessario no JS
+6 - Adicionando elementos no html
+7 - Commit ao GitHub
