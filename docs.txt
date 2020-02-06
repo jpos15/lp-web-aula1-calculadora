@@ -1,0 +1,2 @@
+1 - Criando projeto base
+2 - Criando repositório no GitHub
