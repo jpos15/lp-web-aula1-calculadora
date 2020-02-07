@@ -10,13 +10,14 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src='main.js'></script>
 </head>
+
 <body>
     <div class="container" align="center">
         <br>
         <h6>Calculadora</h6>
         <table>
             <tr>
-                <td colspan="3"><input type="text" id="resultado" class="form-control" readonly/></td>
+                <td colspan="3"><input type="text" id="resultado" class="form-control" readonly /></td>
                 <td><button type="button" value="c" onclick="limpar()" class="btn btn-info btn-block">C</td>
             </tr>
             <tr>
@@ -43,10 +44,16 @@
                 <td><button type="button" onclick="calcular()" class="btn btn-info btn-block">=</td>
                 <td><button type="button" onclick="dig('*')" class="btn btn-info btn-block">*</td>
             </tr>
-            <tr>
-                <td colspan="3"><input type="text" id="hitorico" class="form-control" readonly/></td>
-            </tr>
         </table>
+        <br>
+        <br>
+        <div>
+            <h6>Histórico</h6>
+            <textarea id="historico" rows=10 class="form-control col-3" readonly></textarea>
+            <br>
+            <button onclick="limparHistorico()" class="btn btn-warning">Limpar</button>
+        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -59,4 +66,5 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
